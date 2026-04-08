@@ -980,6 +980,23 @@ section {
   margin-top: 8px;
 }
 
+/* ── CONTACT CTA ── */
+.contact-cta {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(245,239,230,0.1);
+}
+
+.contact-cta p {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(245,239,230,0.45);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  letter-spacing: 0.01em;
+}
+
 /* ── FOOTER ── */
 footer {
   background: #110E0B;
