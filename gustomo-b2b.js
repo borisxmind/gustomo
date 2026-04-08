@@ -21,7 +21,9 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const navHeight = 72;
+      const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+      window.scrollTo({ top, behavior: 'smooth' });
       // close mobile nav if open
       closeMobileNav();
     }
